@@ -88,13 +88,12 @@ def cycle(prompt, is_initial_prompt=False):
     
     if detected_sound.any() and emotionSound:
         try:
-            emotion_sound_directory = f"/home/anrric/Desktop/TherapyMultiModalModel/emotion_recognition_using_speech/data/train-custom/{emotionSound}"
-            os.makedirs(emotion_sound_directory, exist_ok=True)
-            new_path = os.path.join(emotion_sound_directory, f"test_{emotionSound}_{datetime.now()}.wav")
+            
+            new_path = os.path.join("/home/anrric/Desktop/TherapyMultiModalModel/emotion_recognition_using_speech/data/train-custom", f"test_{datetime.now()}_{emotionSound}.wav")
             shutil.move("/tmp/test_recording999.wav", new_path)        
             
             # Save prompt and chat log to a text file named after the emotion
-            log_path = os.path.join(emotion_sound_directory, f"{emotionSound}_{datetime.now()}.txt")
+            log_path = os.path.join("/home/anrric/Desktop/TherapyMultiModalModel/emotion_recognition_using_speech/data/train-custom", f"{emotionSound}_{datetime.now()}.txt")
             with open(log_path, "a") as log_file:
                 log_file.write(f"Prompt: {prompt}\n")
                 log_file.write(f"Chat Log: {response}\n\n")
