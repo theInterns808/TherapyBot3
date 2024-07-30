@@ -16,3 +16,5 @@ https://drive.google.com/file/d/1FYQAXrhhfLs0zn83PKsr4NGdAEyLwTji/view?usp=shari
 https://drive.google.com/file/d/1_nV3V-03Yz9LQkhZOXvg6aMO11YWc0hK/view?usp=sharing
 
 https://drive.google.com/file/d/1F4nxvmb90njYbTA7lZhL-3b1j8OLHurK/view?usp=sharing
+
+By James Clark, Issac Verbrogugge, and Anrric Xu
